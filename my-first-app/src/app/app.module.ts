@@ -8,13 +8,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SiliconComponent } from './silicon/silicon.component';
+import { CoffeeHeaderComponent } from './coffee-header/coffee-header.component';
+import { CoffeeCarouselComponent } from './coffee-carousel/coffee-carousel.component';
+import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SiliconComponent
+    SiliconComponent,
+    CoffeeHeaderComponent,
+    CoffeeCarouselComponent,
+    CoffeeFooterComponent
   ],
   imports: [
     BrowserModule,
