@@ -27,11 +27,25 @@ export class HeaderComponent implements OnInit {
   // }
 
   // @Input() numCountIn = 0;
-  count=0;
-  productName = "";
-  addTo(nameProduct: any) {
-    this.productName = nameProduct;
+  // count=0;
+  // productName = "";
+  // addTo(nameProduct: any) {
+  //   this.productName = nameProduct;
+  //   this.count++;
+  // console.log(this.productName);
+  // }
+
+
+  count = 0;
+
+  addTo() {
     this.count++;
-    // console.log(this.productName);
+  }
+
+  removeTo() {
+    if (this.count == 0) {
+      return;
+    }
+    this.count--;
   }
 }

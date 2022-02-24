@@ -1,14 +1,51 @@
-<p>header works!</p>
+<!-- <p>header works!</p> -->
 
 <!-- <p>coffee-header works!</p> -->
 
 
 <!-- <app-footer [textReceived]="textForFooter" ></app-footer> -->
-<div class="container">
+<!-- <div class="container">
     <H4>Cart: {{productName}}</H4>
     <p>{{count}}</p>
-</div>
+</div> -->
 
-<app-cart (textOut)="addTo($event)"></app-cart>
+<!-- <app-cart (textOut)="addTo($event)"></app-cart> -->
 
-<!-- <app-products></app-products> -->
+<nav class="navbar-expand-lg navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">SHOP</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarColor03"
+        aria-controls="navbarColor03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <p class="form-control me-2 mt-2">Cart: {{count}}</p>
+          <!-- <button class="btn btn-outline-primary" type="submit">Search</button> -->
+        </form>
+      </div>
+    </div>
+  </nav>
+
+<app-products (eventExecutedAdd)="addTo()" (eventExecutedRemove)="removeTo()"></app-products>
