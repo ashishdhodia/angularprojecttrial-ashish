@@ -1,2 +1,14 @@
 <p>header works!</p>
 
+<!-- <p>coffee-header works!</p> -->
+
+
+<!-- <app-footer [textReceived]="textForFooter" ></app-footer> -->
+<div class="container">
+    <H4>Cart: {{productName}}</H4>
+    <p>{{count}}</p>
+</div>
+
+<app-cart (textOut)="addTo($event)"></app-cart>
+
+<!-- <app-products></app-products> -->

@@ -12,4 +12,6 @@ export class CoffeeHeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  arrForFooter=["This", "is", "array", "for", "footer"]
+
 }

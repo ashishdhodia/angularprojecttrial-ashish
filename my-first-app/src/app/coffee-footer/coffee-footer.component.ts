@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-coffee-footer',
@@ -11,5 +11,5 @@ export class CoffeeFooterComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  @Input() arrReceived:any;
 }

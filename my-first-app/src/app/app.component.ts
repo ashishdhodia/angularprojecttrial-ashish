@@ -36,6 +36,7 @@ export class AppComponent {
 
   // ginput=0;
 
-  stringName = ["0-King","1-Jamees","2-Services","3-Soper","4-forward"]
+  // stringName = ["0-King","1-Jamees","2-Services","3-Soper","4-forward"]
   
+ 
 }

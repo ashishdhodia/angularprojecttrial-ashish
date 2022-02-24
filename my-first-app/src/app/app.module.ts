@@ -11,6 +11,8 @@ import { SiliconComponent } from './silicon/silicon.component';
 import { CoffeeHeaderComponent } from './coffee-header/coffee-header.component';
 import { CoffeeCarouselComponent } from './coffee-carousel/coffee-carousel.component';
 import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
+import { CartComponent } from './header/cart/cart.component';
+import { ProductsComponent } from './header/products/products.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
     SiliconComponent,
     CoffeeHeaderComponent,
     CoffeeCarouselComponent,
-    CoffeeFooterComponent
+    CoffeeFooterComponent,
+    CartComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
