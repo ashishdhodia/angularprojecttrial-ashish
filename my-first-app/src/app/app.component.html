@@ -18,8 +18,8 @@
       />
     </div>
   </div> -->
-  
-  <!-- <div class="container-sm">
+
+<!-- <div class="container-sm">
     <form class="row g-3">
       <div class="col-md-6">
         <label for="inputFname" class="form-label">Firstname</label>
@@ -39,7 +39,45 @@
   <p class="mt-3">{{ content }}</p>
 </div> -->
 
-<app-coffee-header></app-coffee-header>
+<!-- <app-coffee-header></app-coffee-header>
 <app-coffee-carousel></app-coffee-carousel>
-<app-coffee-footer></app-coffee-footer>
+<app-coffee-footer></app-coffee-footer> -->
 
+<!-- <div class="container-sm">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputFname" class="form-label">Firstname</label>
+        <input type="text" class="form-control" name="fname" [(ngModel)]="fname" />
+      </div>
+      <div class="col-md-6">
+        <label for="inputLname" class="form-label">Lastname</label>
+        <input type="text" class="form-control" name="lname" [(ngModel)]="lname" />
+      </div>
+      
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" (click)="show()">
+          Sign in
+      </button>
+    </div>
+  </form>
+  <p class="mt-3">{{ content}}</p>
+</div> -->
+
+<!-- <div class="container-sm">
+    <form class="row g-3">
+      <div class="col-md-12">
+        <label for="inputFname" class="form-label">Input</label>
+        <input type="text" class="form-control" name="ginput" [(ngModel)]="ginput" />
+      </div>
+  </form>
+  <p class="mt-3" *ngIf="ginput%2==0">Even</p>
+  <p class="mt-3" *ngIf="ginput%2!=0">Odd</p>
+</div> -->
+
+<div class="container">
+  <div *ngFor="let name of stringName; let i = index">
+    <div *ngIf="i%2!=0">
+      <p>{{ name }}</p>
+    </div>
+  </div>
+</div>

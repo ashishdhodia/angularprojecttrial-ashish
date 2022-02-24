@@ -24,4 +24,18 @@ export class AppComponent {
   //   this.content = `Firstname: ${this.fname} Lastname: ${this.lname}`
   //   // console.log(this.fname);
   // }
+
+  
+  // content = ""
+  // fname: string = '';
+  // lname: string = '';
+  // show() {
+  //   this.content = `Firstname: ${this.fname} Lastname: ${this.lname}`
+    // console.log(this.fname);
+  // }
+
+  // ginput=0;
+
+  stringName = ["0-King","1-Jamees","2-Services","3-Soper","4-forward"]
+  
 }
