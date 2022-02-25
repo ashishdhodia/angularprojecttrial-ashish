@@ -144,4 +144,64 @@
   </div>
 </div> -->
 
+<div class="container">
+  <div class="col mt-5">
+    <div class="row">
+      <div
+        class="card text-dark bg-light mb-3 ms-2"
+        style="max-width: 18rem"
+        *ngFor="let item of data; let i = index"
+      >
+        <div class="card-header">{{ data[i].id }}</div>
+        <div class="card-body">
+          <h5 class="card-title">{{ data[i].name }}</h5>
+          <h5 class="card-title">Price: ${{ data[i].price }}</h5>
+          <h6 class="card-title">
+            Quantity Available: {{ data[i].quntity_avl }}
+          </h6>
+          <h6 class="card-title">
+            Warehouse Stock: {{ data[i].stock_warehouse }}
+          </h6>
+          <h6 class="card-title">
+            Manufacturing Location: {{ data[i].manufacturing_location }}
+          </h6>
+          <button
+            type="button"
+            class="btn btn-danger mt-2"
+            style="width: 100%"
+            (click)="addTo(data[i].id - 1)"
+          >
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <div class="row mt-5">
+    <div class="col">
+      <div class="card border-primary mb-3" style="max-width: 73rem">
+        <div
+          class="card-header"
+          [ngClass]="data[i].hide == 0 ? 'red' : 'blue'"
+          *ngFor="let item of data; let i = index"
+        >
+          {{ data[i].name }} | ${{ data[i].cost }} | Quantity:
+          {{ data[i].added }} | Available:
+          {{ data[i].quntity_avl }}
+          <button
+            type="button"
+            class="btn btn-info mt-2"
+            (click)="remove(data[i].id - 1)"
+          >x</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div *ngFor="let item of data; let i = index">
+  <p>{{ data[i].id }}</p>
+  <p>{{ data[i].name }}</p>
+  <p>{{ data[i].price }}</p>
+</div> -->
+</div>
