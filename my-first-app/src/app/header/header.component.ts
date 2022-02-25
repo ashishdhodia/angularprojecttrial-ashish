@@ -36,16 +36,16 @@ export class HeaderComponent implements OnInit {
   // }
 
 
-  count = 0;
+  // count = 0;
 
-  addTo() {
-    this.count++;
-  }
+  // addTo() {
+  //   this.count++;
+  // }
 
-  removeTo() {
-    if (this.count == 0) {
-      return;
-    }
-    this.count--;
-  }
+  // removeTo() {
+  //   if (this.count == 0) {
+  //     return;
+  //   }
+  //   this.count--;
+  // }
 }

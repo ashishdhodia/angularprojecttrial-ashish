@@ -25,18 +25,33 @@ export class AppComponent {
   //   // console.log(this.fname);
   // }
 
-  
+
   // content = ""
   // fname: string = '';
   // lname: string = '';
   // show() {
   //   this.content = `Firstname: ${this.fname} Lastname: ${this.lname}`
-    // console.log(this.fname);
+  // console.log(this.fname);
   // }
 
   // ginput=0;
 
   // stringName = ["0-King","1-Jamees","2-Services","3-Soper","4-forward"]
-  
- 
+
+  item = 100;
+
+  array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+  nInput = 0;
+
+  classValue = ""
+
+  enable() {
+    this.classValue = 'green';
+  }
+
+  disable() {
+    this.classValue = 'hide';
+  }
+
 }

@@ -1,0 +1,14 @@
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+
+.green{
+    color: rgb(20, 192, 20);
+}
+
+.hide {
+    color: transparent;
+}
