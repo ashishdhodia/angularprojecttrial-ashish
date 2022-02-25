@@ -86,8 +86,8 @@
 
 <!-- <app-header></app-header> -->
 
-<div class="container">
-  <!-- <p [ngClass]="item > 10 ? 'red' : 'blue'">{{ item }}</p> -->
+<!-- <div class="container">
+  <p [ngClass]="item > 10 ? 'red' : 'blue'">{{ item }}</p>
   <div *ngFor="let i of array">
     <p [ngClass]="i % 2 == 0 ? 'red' : 'blue'">{{ i }}</p>
   </div>
@@ -106,4 +106,28 @@
       </div>
     </div>
   </form>
+</div> -->
+
+<!-- <div [ngStyle]="{ color: 'red' }"></div> -->
+
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Button</th>
+      </tr>
+    </thead>
+
+    <tr *ngFor="let user of data; let i = index" [ngClass]="i % 2 == 0 ? 'red' : 'blue'" [ngStyle]="hideData">
+      <td>{{ data[i].id }}</td>
+      <td>{{ data[i].name }}</td>
+      <td>{{ data[i].username }}</td>
+      <td>{{ data[i].email }}</td>
+      <button type="button" class="btn btn-danger" (click)="disable()">Hide</button>
+    </tr>
+  </table>
 </div>
