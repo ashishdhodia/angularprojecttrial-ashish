@@ -15,6 +15,8 @@ import { CartComponent } from './header/cart/cart.component';
 import { ProductsComponent } from './header/products/products.component';
 import { DatetimeService } from './datetime.service';
 import { GetJsonDataService } from './get-json-data.service';
+import { GetDataComponentComponent } from './get-data-component/get-data-component.component';
+import { SetDataComponentComponent } from './set-data-component/set-data-component.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { GetJsonDataService } from './get-json-data.service';
     CoffeeCarouselComponent,
     CoffeeFooterComponent,
     CartComponent,
-    ProductsComponent
+    ProductsComponent,
+    GetDataComponentComponent,
+    SetDataComponentComponent
   ],
   imports: [
     BrowserModule,
