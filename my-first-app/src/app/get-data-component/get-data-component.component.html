@@ -6,7 +6,7 @@
   <br>
   Same Component: {{temp}} -->
 
-  <br />
+  <!-- <br />
   <div class="row">
     <div class="col">
       <input
@@ -17,6 +17,64 @@
         (keyup)="copyText()"
       />
     </div>
-  </div>
+  </div> -->
   <!-- {{username}} -->
+
+  <div class="container mb-5">
+    <form
+      class="row g-3 mt-5"
+      #myForm="ngForm"
+      (ngSubmit)="onSubmit(myForm.value)"
+    >
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label" name="email">Email</label>
+        <input
+          type="text"
+          class="form-control"
+          [ngModel]="user.email"
+          name="email"
+          required
+        />
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input
+          type="text"
+          class="form-control"
+          [ngModel]="user.password"
+          name="password"
+          required
+        />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">City</label>
+        <input
+          type="text"
+          class="form-control"
+          [ngModel]="user.city"
+          name="city"
+          required
+        />
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Zip</label>
+        <input
+          type="text"
+          class="form-control"
+          [ngModel]="user.zip"
+          name="zip"
+          required
+        />
+      </div>
+      <div class="col-12">
+        <button
+          type="submit"
+          class="btn btn-primary"
+          [disabled]="!myForm.form.valid"
+        >
+          Sign in
+        </button>
+      </div>
+    </form>
+  </div>
 </div>

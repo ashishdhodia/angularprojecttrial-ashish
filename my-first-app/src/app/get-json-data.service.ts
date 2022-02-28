@@ -80,12 +80,28 @@ export class GetJsonDataService {
   //   return this.temp;
   // }
 
-  textToShow = "";
-  testToShow(str: string) {
-    this.textToShow = str;
+  // textToShow = "";
+  // testToShow(str: string) {
+  //   this.textToShow = str;
+  // }
+  // sendText() {
+  //   return this.textToShow;
+  // }
+
+  user = [{
+    "email": "",
+    "password": "",
+    "city": "",
+    "zip": ""
+  }];
+
+  setData(recUser: any) {
+    this.user.push(recUser);
+    // console.log(this.user);
   }
-  sendText() {
-    return this.textToShow;
+
+  sendData() {
+    return this.user;
   }
 
 }

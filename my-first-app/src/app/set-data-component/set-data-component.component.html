@@ -3,5 +3,26 @@
 
   <!-- {{ this.getJson.send() }} -->
 
-  <p class="mt-3">{{this.getJson.sendText()}}</p>
+  <!-- <p class="mt-3">{{getJson.sendText()}}</p> -->
+
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Email</th>
+        <th scope="col">Password</th>
+        <th scope="col">City</th>
+        <th scope="col">Zip</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let element of user, let i = index">
+        <td>{{user[i].email}}</td>
+        <td>{{user[i].password}}</td>
+        <td>{{user[i].city}}</td>
+        <td>{{user[i].zip}}</td>
+      </tr>
+    </tbody>
+  </table>
+   
 </div>

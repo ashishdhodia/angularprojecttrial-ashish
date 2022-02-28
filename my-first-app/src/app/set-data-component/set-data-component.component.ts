@@ -13,7 +13,9 @@ export class SetDataComponentComponent implements OnInit {
 
   // temp = this.getJson.send()
 
-  text = this.getJson.sendText()
+  // text = this.getJson.sendText()
+
+  user = this.getJson.sendData()
 
   ngOnInit(): void {
   }
