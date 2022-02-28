@@ -36,13 +36,34 @@ export class GetDataComponentComponent implements OnInit {
   //   this.getJson.setData(recUser);
   // }
 
-  number = 0;
+  // number = 0;
 
-  sendNumber() {
-    this.getJson.setNumber(this.number);
+  // sendNumber() {
+  //   this.getJson.setNumber(this.number);
+  // }
+  cost = 1000
+  str1 = ""
+  str2 = ""
+  flightData: any = `{
+      "from": "",
+      "to": "",
+      "departDate": "",
+      "returnDate": ""
+    }`;
+
+  departDate: any
+  onSubmit(data: any) {
+    let date1 = new Date(data.departDate);
+    let date2 = new Date(data.returnDate);
+    // console.log(date1);
+
+    let time = date2.getTime() - date1.getTime();
+    let days = time / (1000 * 3600 * 24);
+
+    this.str1 = `Total ${days} days journey!`;
+    this.str2 = `Total cost will be $${this.cost * days}.`;
+
   }
-
-
 
   ngOnInit(): void {
   }

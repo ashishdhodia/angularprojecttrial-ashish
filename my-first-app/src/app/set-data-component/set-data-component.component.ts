@@ -16,12 +16,12 @@ export class SetDataComponentComponent implements OnInit {
   // text = this.getJson.sendText()
 
   // user = this.getJson.sendData()
-
+  
   // number = this.getJson.sendNumber();
-
-  arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-
+  
+  // arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  
+  
   ngOnInit(): void {
   }
 

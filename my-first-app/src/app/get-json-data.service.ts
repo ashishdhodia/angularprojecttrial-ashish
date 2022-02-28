@@ -104,14 +104,14 @@ export class GetJsonDataService {
   //   return this.user;
   // }
 
-  number = 0;
-  setNumber(number: any) {
-    this.number = number;
-    // console.log(this.number);
-  }
+  // number = 0;
+  // setNumber(number: any) {
+  //   this.number = number;
+  //   // console.log(this.number);
+  // }
 
-  sendNumber() {
-    return this.number;
-  }
+  // sendNumber() {
+  //   return this.number;
+  // }
 
 }
