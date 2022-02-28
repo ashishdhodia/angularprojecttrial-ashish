@@ -23,18 +23,27 @@ export class GetDataComponentComponent implements OnInit {
   // copyText(){
   //   this.getJson.testToShow(this.username);
   // }
-  
-  user: any = `{
-    "email": "",
-    "password": "",
-    "city": "",
-    "zip": ""
-  }`;
-  
-  onSubmit(recUser: any) {
-    console.log(recUser);
-    this.getJson.setData(recUser);
+
+  // user: any = `{
+  //   "email": "",
+  //   "password": "",
+  //   "city": "",
+  //   "zip": ""
+  // }`;
+
+  // onSubmit(recUser: any) {
+  //   console.log(recUser);
+  //   this.getJson.setData(recUser);
+  // }
+
+  number = 0;
+
+  sendNumber() {
+    this.getJson.setNumber(this.number);
   }
+
+
+
   ngOnInit(): void {
   }
 

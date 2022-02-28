@@ -20,7 +20,7 @@
   </div> -->
   <!-- {{username}} -->
 
-  <div class="container mb-5">
+  <!-- <div class="container mb-5">
     <form
       class="row g-3 mt-5"
       #myForm="ngForm"
@@ -76,5 +76,13 @@
         </button>
       </div>
     </form>
+  </div> -->
+  <div class="row">
+    <div class="col">
+        <input type="number" class="form-control" [(ngModel)]="number" />
+    </div>
+    <div class="col">
+        <button class="btn btn-danger" (click)="sendNumber()">Show Table</button>
+    </div>
   </div>
 </div>

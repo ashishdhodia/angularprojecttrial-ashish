@@ -88,20 +88,30 @@ export class GetJsonDataService {
   //   return this.textToShow;
   // }
 
-  user = [{
-    "email": "",
-    "password": "",
-    "city": "",
-    "zip": ""
-  }];
+  // user = [{
+  //   "email": "",
+  //   "password": "",
+  //   "city": "",
+  //   "zip": ""
+  // }];
 
-  setData(recUser: any) {
-    this.user.push(recUser);
-    // console.log(this.user);
+  // setData(recUser: any) {
+  //   this.user.push(recUser);
+  //   // console.log(this.user);
+  // }
+
+  // sendData() {
+  //   return this.user;
+  // }
+
+  number = 0;
+  setNumber(number: any) {
+    this.number = number;
+    // console.log(this.number);
   }
 
-  sendData() {
-    return this.user;
+  sendNumber() {
+    return this.number;
   }
 
 }
