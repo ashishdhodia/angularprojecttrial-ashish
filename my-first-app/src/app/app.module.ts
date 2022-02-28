@@ -13,6 +13,8 @@ import { CoffeeCarouselComponent } from './coffee-carousel/coffee-carousel.compo
 import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
 import { CartComponent } from './header/cart/cart.component';
 import { ProductsComponent } from './header/products/products.component';
+import { DatetimeService } from './datetime.service';
+import { GetJsonDataService } from './get-json-data.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { ProductsComponent } from './header/products/products.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DatetimeService, GetJsonDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
