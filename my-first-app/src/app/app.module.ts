@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +17,8 @@ import { DatetimeService } from './datetime.service';
 import { GetJsonDataService } from './get-json-data.service';
 import { GetDataComponentComponent } from './get-data-component/get-data-component.component';
 import { SetDataComponentComponent } from './set-data-component/set-data-component.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveAddressFormComponent } from './reactive-address-form/reactive-address-form.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +32,15 @@ import { SetDataComponentComponent } from './set-data-component/set-data-compone
     CartComponent,
     ProductsComponent,
     GetDataComponentComponent,
-    SetDataComponentComponent
+    SetDataComponentComponent,
+    ReactiveFormComponent,
+    ReactiveAddressFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DatetimeService, GetJsonDataService],
   bootstrap: [AppComponent]

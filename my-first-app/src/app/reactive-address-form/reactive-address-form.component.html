@@ -1,0 +1,59 @@
+<div class="container">
+  <p>reactive-address-form works!</p>
+
+  <form class="row g-3 mt-5" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="col-md-6">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-control" formControlName="name" required />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label" name="email">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="email"
+        required
+      />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Age</label>
+      <input type="text" class="form-control" formControlName="age" required />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Mobile</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="mobile"
+        required
+      />
+    </div>
+    <div class="col-6">
+      <label class="form-label">City</label>
+      <input type="text" class="form-control" formControlName="city" required />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Zip</label>
+      <input type="text" class="form-control" formControlName="zip" required />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Departure</label>
+      <input type="date" class="form-control" formControlName="departDate" />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Return</label>
+      <input type="date" class="form-control" formControlName="returnDate" />
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" [disabled]="myForm.invalid">
+        Sign in
+      </button>
+      <p>*Cost per day is $1000</p>
+    </div>
+  </form>
+
+  <p>{{str1}}</p>
+  <p>{{str2}}</p>
+
+  <!-- <p>{{myForm.value.name}}</p> -->
+</div>

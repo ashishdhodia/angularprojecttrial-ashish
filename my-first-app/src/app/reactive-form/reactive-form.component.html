@@ -1,0 +1,36 @@
+<div class="container">
+  <p>reactive-form works!</p>
+
+  <form class="row g-3 mt-5" [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+    <div class="col-md-6">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-control" formControlName="name" required />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label" name="email">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        formControlName="email"
+        required
+      />
+    </div>
+    <div class="col-12">
+      <label class="form-label">City</label>
+      <input type="text" class="form-control" formControlName="city" required />
+    </div>
+    <div class="col-12">
+      <label class="form-label">Zip</label>
+      <input type="text" class="form-control" formControlName="zip" required />
+    </div>
+    <div class="col-12">
+      <button
+        type="submit"
+        class="btn btn-primary"
+        [disabled]="myForm.invalid"
+      >
+        Sign in
+      </button>
+    </div>
+  </form>
+</div>
