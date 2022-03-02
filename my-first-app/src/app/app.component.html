@@ -144,7 +144,7 @@
 <!-- <app-reactive-form></app-reactive-form> -->
 <!-- <app-reactive-address-form></app-reactive-address-form> -->
 
-<div class="container">
+<!-- <div class="container">
   <table class="table">
     <thead>
       <tr>
@@ -163,4 +163,53 @@
       </tr>
     </tbody>
   </table>
+</div> -->
+
+<div class="container">
+  <!-- <th>{{ recData.id }}</th>
+  <th>{{ recData.name }}</th>
+  <th>{{ recData.username }}</th>
+  <th>{{ recData.email }}</th>
+
+  {{ ginput }} -->
+  <div class="row g-3 mt-5">
+    <div class="col-2">
+      <input
+        type="number"
+        class="form-control"
+        name="ginput"
+        [(ngModel)]="ginput"
+      />
+    </div>
+    <div class="col-10">
+      <button class="btn btn-primary" style="width: 100%" (click)="onSubmit()">
+        Get Data
+      </button>
+    </div>
+
+    <div class="col-6">
+      <label class="form-label">Full Name</label>
+      <input type="text" class="form-control" value="{{ recData.name }}" />
+    </div>
+    <div class="col-6">
+      <label class="form-label" name="email">Email</label>
+      <input type="text" class="form-control" value="{{ recData.email }}" />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Age</label>
+      <input type="text" class="form-control" value="{{ recData.age }}" />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Mobile</label>
+      <input type="text" class="form-control" value="{{ recData.mobile }}" />
+    </div>
+    <div class="col-6">
+      <label class="form-label">City</label>
+      <input type="text" class="form-control" value="{{ recData.city }}" />
+    </div>
+    <div class="col-6">
+      <label class="form-label">Address</label>
+      <input type="text" class="form-control" value="{{ recData.address }}" />
+    </div>
+  </div>
 </div>

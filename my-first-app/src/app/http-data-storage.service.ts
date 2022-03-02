@@ -8,7 +8,11 @@ export class HttpDataStorageService {
 
   constructor(private ht: HttpClient) { }
 
-  getdata(){
-    return this.ht.get("http://localhost:3000/user");
+  // getdata(){
+  //   return this.ht.get("http://localhost:3000/user");
+  // }
+
+  get(id: any){
+    return this.ht.get(`http://localhost:3000/user/${id}`);
   }
 }
