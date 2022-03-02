@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { CoffeeFooterComponent } from './coffee-footer/coffee-footer.component';
 import { CartComponent } from './header/cart/cart.component';
 import { ProductsComponent } from './header/products/products.component';
 import { DatetimeService } from './datetime.service';
+import { HttpDataStorageService } from './http-data-storage.service';
 import { GetJsonDataService } from './get-json-data.service';
 import { GetDataComponentComponent } from './get-data-component/get-data-component.component';
 import { SetDataComponentComponent } from './set-data-component/set-data-component.component';
@@ -40,9 +42,10 @@ import { ReactiveAddressFormComponent } from './reactive-address-form/reactive-a
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [DatetimeService, GetJsonDataService],
+  providers: [DatetimeService, GetJsonDataService, HttpDataStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
